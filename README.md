@@ -1,3 +1,7 @@
+# ---
+
+> OpenClaw AI Agent Skill
+
 ---
 name: Council Composio
 description: Connect Council Room agents to 500+ external apps (Gmail, Slack, GitHub, Notion, Jira, Linear, Google Workspace, etc.) via Composio's auth layer. Handles OAuth properly so tokens are managed by Composio, not stored in agent context. Use when agents need to send emails, create tasks, post messages, or interact with external SaaS tools.
@@ -67,3 +71,13 @@ Add curl to AgentExec allowlist with composio base URL pattern.
 
 - 429 = rate limited → retry with exponential backoff
 - Each tool call = 1 API credit (check your plan)
+
+## Installation
+
+```bash
+cp -r council-composio/ ~/.openclaw/workspace/skills/council-composio/
+```
+
+## License
+
+MIT © [Sentra Technology](https://github.com/Icattj)
